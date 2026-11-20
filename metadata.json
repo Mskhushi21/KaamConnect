@@ -1,0 +1,6 @@
+{
+  "name": "KaamConnect",
+  "description": "KaamConnect is a trilingual (English, Kannada, Hindi) local job discovery and worker hiring platform connecting local workers with households, shops, and businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
