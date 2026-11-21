@@ -1,6 +1,6 @@
 import { CheckCircle2, Clock, Eye, XCircle, MinusCircle, AlertTriangle } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { translateAppStatus, translateJobStatus } from '../i18n/index.ts';
+import { useApp } from './AppContext.tsx';
+import { translateAppStatus, translateJobStatus } from './index.ts';
 
 export function AppStatusLabel({ status }: { status: string }) {
   const { t } = useApp();

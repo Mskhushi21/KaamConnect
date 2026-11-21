@@ -3,8 +3,8 @@ import {
   getAreasForCity,
   getCitiesForDistrict,
   getDistrictsForState,
-} from '../data/constants.ts';
-import { useApp } from '../context/AppContext.tsx';
+} from './constants.ts';
+import { useApp } from './AppContext.tsx';
 
 interface LocationFieldsProps {
   stateValue: string;

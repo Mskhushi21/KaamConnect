@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Search, ShieldCheck, Briefcase } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { JOB_CATEGORIES, WORK_TYPES, getAllCities } from '../data/constants.ts';
+import { useApp } from './AppContext.tsx';
+import { JOB_CATEGORIES, WORK_TYPES, getAllCities } from './constants.ts';
 import {
   translateCategory,
   translateExperience,
   translateWorkType,
-} from '../i18n/index.ts';
-import { apiFetch } from '../lib/api.ts';
+} from './index.ts';
+import { apiFetch } from './api.ts';
 
 interface WorkerCardItem {
   id: number;

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Globe, KeyRound } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { LANGUAGE_LABELS } from '../i18n/index.ts';
-import type { Language } from '../data/constants.ts';
-import { apiFetch } from '../lib/api.ts';
+import { useApp } from './AppContext.tsx';
+import { LANGUAGE_LABELS } from './index.ts';
+import type { Language } from './constants.ts';
+import { apiFetch } from './api.ts';
 
 export function AccountSettingsPanel() {
   const { language, setLanguage, t, showToast } = useApp();

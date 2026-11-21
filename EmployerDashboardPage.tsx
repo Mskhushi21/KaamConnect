@@ -13,24 +13,24 @@ import {
   Trash2,
   X,
 } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { apiFetch } from '../lib/api.ts';
+import { useApp } from './AppContext.tsx';
+import { apiFetch } from './api.ts';
 import {
   EMPLOYER_TYPES,
   EXPERIENCE_LEVELS,
   JOB_CATEGORIES,
   WORK_TYPES,
-} from '../data/constants.ts';
+} from './constants.ts';
 import {
   translateCategory,
   translateEmployerType,
   translateExperience,
   translateWorkType,
-} from '../i18n/index.ts';
-import { AppStatusLabel, JobStatusLabel } from '../components/StatusText.tsx';
-import { LocationFields } from '../components/LocationFields.tsx';
-import { NotificationsPanel, type NotificationItem } from '../components/NotificationsPanel.tsx';
-import { AccountSettingsPanel } from '../components/AccountSettingsPanel.tsx';
+} from './index.ts';
+import { AppStatusLabel, JobStatusLabel } from './StatusText.tsx';
+import { LocationFields } from './LocationFields.tsx';
+import { NotificationsPanel, type NotificationItem } from './NotificationsPanel.tsx';
+import { AccountSettingsPanel } from './AccountSettingsPanel.tsx';
 
 type EmployerTab = 'overview' | 'post' | 'jobs' | 'applicants' | 'profile' | 'notifications' | 'settings';
 

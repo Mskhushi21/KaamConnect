@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Phone, CheckCircle2 } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { apiFetch } from '../lib/api.ts';
+import { useApp } from './AppContext.tsx';
+import { apiFetch } from './api.ts';
 
 export function ContactPage() {
   const { t, showToast } = useApp();

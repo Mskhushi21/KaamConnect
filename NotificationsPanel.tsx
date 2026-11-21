@@ -1,6 +1,6 @@
 import { Bell, CheckCheck } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { apiFetch } from '../lib/api.ts';
+import { useApp } from './AppContext.tsx';
+import { apiFetch } from './api.ts';
 
 export interface NotificationItem {
   id: number;

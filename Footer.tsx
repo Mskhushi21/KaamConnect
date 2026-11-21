@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ShieldAlert } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
+import { useApp } from './AppContext.tsx';
 
 export function Footer() {
   const { t } = useApp();

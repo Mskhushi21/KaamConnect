@@ -1,4 +1,4 @@
-import type { Language } from '../data/constants.ts';
+import type { Language } from './constants.ts';
 import { en } from './en.ts';
 import { kn } from './kn.ts';
 import { hi } from './hi.ts';

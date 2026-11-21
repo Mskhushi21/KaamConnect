@@ -23,11 +23,11 @@ import {
   Car,
   Users,
 } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { JOB_CATEGORIES, getAllCities } from '../data/constants.ts';
-import { translateCategory } from '../i18n/index.ts';
-import { apiFetch } from '../lib/api.ts';
-import { JobCard, type JobListing } from '../components/JobCard.tsx';
+import { useApp } from './AppContext.tsx';
+import { JOB_CATEGORIES, getAllCities } from './constants.ts';
+import { translateCategory } from './index.ts';
+import { apiFetch } from './api.ts';
+import { JobCard, type JobListing } from './JobCard.tsx';
 
 const CATEGORY_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Construction: Hammer,

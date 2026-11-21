@@ -1,21 +1,21 @@
 import React from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { AppProvider, useApp } from './context/AppContext.tsx';
-import type { UserRole } from './data/constants.ts';
-import { Navbar } from './components/Navbar.tsx';
-import { Footer } from './components/Footer.tsx';
-import { HomePage } from './pages/HomePage.tsx';
-import { FindJobsPage } from './pages/FindJobsPage.tsx';
-import { JobDetailsPage } from './pages/JobDetailsPage.tsx';
-import { HireWorkersPage } from './pages/HireWorkersPage.tsx';
-import { LoginPage } from './pages/LoginPage.tsx';
-import { WorkerRegisterPage } from './pages/WorkerRegisterPage.tsx';
-import { EmployerRegisterPage } from './pages/EmployerRegisterPage.tsx';
-import { WorkerDashboardPage } from './pages/WorkerDashboardPage.tsx';
-import { EmployerDashboardPage } from './pages/EmployerDashboardPage.tsx';
-import { AdminDashboardPage } from './pages/AdminDashboardPage.tsx';
-import { ContactPage } from './pages/ContactPage.tsx';
-import { AboutPage, HelpPage, PrivacyPage, TermsPage } from './pages/InfoPages.tsx';
+import { AppProvider, useApp } from './AppContext.tsx';
+import type { UserRole } from './constants.ts';
+import { Navbar } from './Navbar.tsx';
+import { Footer } from './Footer.tsx';
+import { HomePage } from './HomePage.tsx';
+import { FindJobsPage } from './FindJobsPage.tsx';
+import { JobDetailsPage } from './JobDetailsPage.tsx';
+import { HireWorkersPage } from './HireWorkersPage.tsx';
+import { LoginPage } from './LoginPage.tsx';
+import { WorkerRegisterPage } from './WorkerRegisterPage.tsx';
+import { EmployerRegisterPage } from './EmployerRegisterPage.tsx';
+import { WorkerDashboardPage } from './WorkerDashboardPage.tsx';
+import { EmployerDashboardPage } from './EmployerDashboardPage.tsx';
+import { AdminDashboardPage } from './AdminDashboardPage.tsx';
+import { ContactPage } from './ContactPage.tsx';
+import { AboutPage, HelpPage, PrivacyPage, TermsPage } from './InfoPages.tsx';
 
 function ProtectedRoute({
   allowedRoles,
