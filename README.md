@@ -35,6 +35,14 @@ KaamConnect is a full-stack local employment and worker hiring platform connecti
 
 ---
 
+## Netlify Website Deployment
+
+The React website starts at the root `index.html`, which loads `main.tsx` and `App.tsx`. Netlify runs `bun run build` from the repository root and publishes `dist`, as configured in `netlify.toml`. Vite bundles the application and stylesheet into `dist/assets` and copies files from `public` into `dist`.
+
+The Netlify routing rules serve `index.html` for React routes, including direct links and refreshes at `/jobs`, `/login`, and `/register/worker`. Existing static assets are served directly.
+
+The existing Express/SQLite backend is not deployed by the static Vite build. `/api/*` requests retain an error response instead of receiving the React HTML page. Account actions and database-backed listings require a separate backend deployment; the website routing fix does not enable those services.
+
 ## Running Locally (Windows / VS Code / macOS / Linux)
 
 ### 1. Prerequisites
