@@ -43,6 +43,8 @@ The Netlify routing rules serve `index.html` for React routes, including direct 
 
 The existing Express/SQLite backend is not deployed by the static Vite build. `/api/*` requests retain an error response instead of receiving the React HTML page. Account actions and database-backed listings require a separate backend deployment; the website routing fix does not enable those services.
 
+Static error files handle read requests only. The API client also checks response formats for form submissions and updates, displaying a readable service error if hosting returns HTML, plain text, or malformed JSON. It rejects HTML even when a page fallback returns HTTP 200.
+
 ## Running Locally (Windows / VS Code / macOS / Linux)
 
 ### 1. Prerequisites
