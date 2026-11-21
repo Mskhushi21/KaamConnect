@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { Menu, X, Globe, LogOut, LayoutDashboard, ChevronDown } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { LANGUAGE_LABELS } from '../i18n/index.ts';
-import type { Language } from '../data/constants.ts';
+import { useApp } from './AppContext.tsx';
+import { LANGUAGE_LABELS } from './index.ts';
+import type { Language } from './constants.ts';
 
 export function Navbar() {
   const { user, language, setLanguage, t, logout } = useApp();

@@ -13,16 +13,16 @@ import {
   UserCheck,
   Users,
 } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { apiFetch } from '../lib/api.ts';
+import { useApp } from './AppContext.tsx';
+import { apiFetch } from './api.ts';
 import {
   translateCategory,
   translateEmployerType,
   translateExperience,
   translateWorkType,
-} from '../i18n/index.ts';
-import { AppStatusLabel, JobStatusLabel } from '../components/StatusText.tsx';
-import { ReportModal } from '../components/ReportModal.tsx';
+} from './index.ts';
+import { AppStatusLabel, JobStatusLabel } from './StatusText.tsx';
+import { ReportModal } from './ReportModal.tsx';
 
 export function JobDetailsPage() {
   const { id } = useParams();

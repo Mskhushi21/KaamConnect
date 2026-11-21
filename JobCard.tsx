@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Bookmark, MapPin, Briefcase, Clock, ArrowRight } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { translateCategory, translateExperience, translateWorkType } from '../i18n/index.ts';
+import { useApp } from './AppContext.tsx';
+import { translateCategory, translateExperience, translateWorkType } from './index.ts';
 import { AppStatusLabel } from './StatusText.tsx';
 
 export interface JobListing {

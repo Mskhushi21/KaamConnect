@@ -11,19 +11,19 @@ import {
   Search,
   Trash2,
 } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { apiFetch } from '../lib/api.ts';
-import { EXPERIENCE_LEVELS, JOB_CATEGORIES, WORK_TYPES } from '../data/constants.ts';
+import { useApp } from './AppContext.tsx';
+import { apiFetch } from './api.ts';
+import { EXPERIENCE_LEVELS, JOB_CATEGORIES, WORK_TYPES } from './constants.ts';
 import {
   translateCategory,
   translateExperience,
   translateWorkType,
-} from '../i18n/index.ts';
-import { AppStatusLabel } from '../components/StatusText.tsx';
-import { JobCard, type JobListing } from '../components/JobCard.tsx';
-import { LocationFields } from '../components/LocationFields.tsx';
-import { NotificationsPanel, type NotificationItem } from '../components/NotificationsPanel.tsx';
-import { AccountSettingsPanel } from '../components/AccountSettingsPanel.tsx';
+} from './index.ts';
+import { AppStatusLabel } from './StatusText.tsx';
+import { JobCard, type JobListing } from './JobCard.tsx';
+import { LocationFields } from './LocationFields.tsx';
+import { NotificationsPanel, type NotificationItem } from './NotificationsPanel.tsx';
+import { AccountSettingsPanel } from './AccountSettingsPanel.tsx';
 
 type WorkerTab = 'overview' | 'applications' | 'saved' | 'profile' | 'notifications' | 'settings';
 

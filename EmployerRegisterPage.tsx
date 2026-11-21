@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ShieldCheck } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { EMPLOYER_TYPES } from '../data/constants.ts';
-import { translateEmployerType } from '../i18n/index.ts';
-import { apiFetch } from '../lib/api.ts';
-import { LocationFields } from '../components/LocationFields.tsx';
+import { useApp } from './AppContext.tsx';
+import { EMPLOYER_TYPES } from './constants.ts';
+import { translateEmployerType } from './index.ts';
+import { apiFetch } from './api.ts';
+import { LocationFields } from './LocationFields.tsx';
 
 export function EmployerRegisterPage() {
   const { language, t, setAuthData, showToast } = useApp();

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Search, SlidersHorizontal, RotateCcw } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
+import { useApp } from './AppContext.tsx';
 import {
   EXPERIENCE_LEVELS,
   INDIA_LOCATIONS,
@@ -9,14 +9,14 @@ import {
   WORK_TYPES,
   getCitiesForDistrict,
   getDistrictsForState,
-} from '../data/constants.ts';
+} from './constants.ts';
 import {
   translateCategory,
   translateExperience,
   translateWorkType,
-} from '../i18n/index.ts';
-import { apiFetch } from '../lib/api.ts';
-import { JobCard, type JobListing } from '../components/JobCard.tsx';
+} from './index.ts';
+import { apiFetch } from './api.ts';
+import { JobCard, type JobListing } from './JobCard.tsx';
 
 export function FindJobsPage() {
   const { user, t, showToast } = useApp();

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { X, AlertTriangle } from 'lucide-react';
-import { REPORT_REASONS } from '../data/constants.ts';
-import { apiFetch } from '../lib/api.ts';
-import { useApp } from '../context/AppContext.tsx';
+import { REPORT_REASONS } from './constants.ts';
+import { apiFetch } from './api.ts';
+import { useApp } from './AppContext.tsx';
 
 interface ReportModalProps {
   open: boolean;

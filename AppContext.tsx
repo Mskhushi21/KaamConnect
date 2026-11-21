@@ -1,7 +1,7 @@
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
-import type { Language, UserRole } from '../data/constants.ts';
-import { dictionaries, type TranslationDict } from '../i18n/index.ts';
-import { apiFetch, setApiAuthToken, setApiCsrfToken } from '../lib/api.ts';
+import type { Language, UserRole } from './constants.ts';
+import { dictionaries, type TranslationDict } from './index.ts';
+import { apiFetch, setApiAuthToken, setApiCsrfToken } from './api.ts';
 
 export interface AuthUser {
   id: number;

@@ -12,10 +12,10 @@ import {
   LogOut,
   Database,
 } from 'lucide-react';
-import { useApp } from '../context/AppContext.tsx';
-import { apiFetch } from '../lib/api.ts';
-import { AppStatusLabel, JobStatusLabel } from '../components/StatusText.tsx';
-import { AccountSettingsPanel } from '../components/AccountSettingsPanel.tsx';
+import { useApp } from './AppContext.tsx';
+import { apiFetch } from './api.ts';
+import { AppStatusLabel, JobStatusLabel } from './StatusText.tsx';
+import { AccountSettingsPanel } from './AccountSettingsPanel.tsx';
 
 type AdminTab =
   | 'overview'
